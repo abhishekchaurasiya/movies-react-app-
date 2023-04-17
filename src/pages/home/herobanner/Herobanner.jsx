@@ -21,8 +21,6 @@ const Herobanner = () => {
     // end point of upcoming movie
     const { data, loading } = UseFetch("/movie/upcoming")
 
-    
-
     // Using useeffect for api call and get bakground image 
     useEffect(() => {
         const bg = url?.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
